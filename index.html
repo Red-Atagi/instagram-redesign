@@ -1,37 +1,87 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Redesign</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    .main-menu {
+      border-bottom: 1px solid black;
+      height: 50px;
+      font-size: 1.5em; /* size of browser text */
+      font-family: sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .picMenu {
+      height: 50px;
+      border: 1px solid black;
+      font-family: sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;      
+    }
+    
+    #profile {
+      display: flex;
+    }
+    
+    #profileInfo {
+      width: 33vw;
+      padding: 20px;
+      background-color: rgba(230, 230, 230, 0.34);
+      border-radius: 20%;
+    }
+    
+    #profilePicture {
+      display: inline-block;
+      background-color: red;
+      width: 16vw
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li id="home"><a href="#instragram">Instagram</a></li>
-      <li id="search"><a href="#search">search</a></li>
-      <li id="create"><a href="#create">create</a></li>
-      <li id="reels"><a href="#reels">reels</a></li>
-      <li id="messages"><a href="#messages">messages</a></li>
-      <li id="notifications"><a href="#notifacations">notifications</a></li>
-    </ul>
+  <nav class="main-menu">
+    <a href="#instragram">Instagram</a>
+    <a href="#search">search</a>
+    <a href="#create">create</a>
+    <a href="#reels">reels</a>
+    <a href="#messages">messages</a>
+    <a href="#notifacations">notifications</a>
   </nav>
 
 <!--   Profile Information -->
-  <div id="profileInfo">
-    <div id="profilePicture"></div>
-    <p id="name">Your Name</p>
-    <p id="userName">@user_name</p>
-    <p id="description">
-      Description goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, leo id egestas pulvinar, elit ante hendrerit ex, et blandit ligula mi et dolor. Fusce. 
-    </p>
+  <div id="profile">
+    <img id="profilePicture" src="image/ceiling-cat.jpg" alt="celing cat">
+    <div id="profileInfo">
+      <div id="name">Your Name</div>
+      <div id="userName">@user_name</div>
+      <div id="description">
+        Description goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, leo id egestas pulvinar, elit ante hendrerit ex, et blandit ligula mi et dolor. Fusce. 
+      </div>
+    </div>
     <button id="storyHighlight">+</button>
   </div>
-  
-  <ul>
-    <li id="Posts"><a href="#posts">Posts</a></li>
-    <li id="Saved"><a href="#saved">Saved</a></li>
-    <li id="Tagged"><a href="#tagged">Tagged</a></li>
-  </ul>
+ 
+  <nav class="picMenu">  
+    <a href="#posts">Posts</a>
+    <a href="#saved">Saved</a>
+    <a href="#tagged">Tagged</a>
+  </nav>
   
   <main>
     <div></div>
